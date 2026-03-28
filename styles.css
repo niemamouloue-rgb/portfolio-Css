@@ -1,33 +1,34 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f5f7fa;
   color: #222;
+  line-height: 1.6;
 }
 
-
 .header {
-  background-color: #111;
-  padding: 20px 50px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 20px 40px 60px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .logo {
-  color: white;
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: 700;
 }
+
 .nav-links {
   list-style: none;
 }
@@ -40,62 +41,101 @@ body {
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-weight: 500;
 }
 
 .nav-links a:hover {
-  color: #00bcd4;
+  text-decoration: underline;
 }
 
-
 .hero {
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  background-color: #00bcd4;
-  color: white;
+  margin-top: 30px;
 }
 
 .hero h2 {
   font-size: 40px;
+  margin-bottom: 10px;
 }
 
-.hero span {
-  color: #111;
+.hero p {
+  font-size: 18px;
 }
 
-
-section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-
-.project-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
+.section {
   background-color: white;
-  padding: 20px;
-  width: 250px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin: 30px auto;
+  padding: 30px;
+  width: 85%;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
+.section h2 {
+  margin-bottom: 15px;
+  color: #1e3c72;
+}
 
-footer {
-  background-color: #111;
+.work-list {
+  margin: 15px 0 20px 20px;
+}
+
+.resume-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.resume-table th,
+.resume-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+.resume-table th {
+  background-color: #eaf1fb;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+  width: fit-content;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e3c72;
   color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #16315c;
+}
+
+.media {
+  margin-top: 20px;
+  display: block;
+}
+
+.footer {
   text-align: center;
-  padding: 15px;
+  background-color: #1e3c72;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
 }
